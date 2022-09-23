@@ -1,4 +1,0 @@
-H.W 1 --------------------------> 2 mark
-
-Q1) Explain and implement the Enigma machine algorithm.
-Q2) Write your own algorithm and explain it.
