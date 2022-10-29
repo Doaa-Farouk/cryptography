@@ -1,4 +1,4 @@
-print(ord('I'))
+# print(ord('I'))
 
 letters = {
     'A' : 0, 'B' : 1,  'C' : 2,
@@ -11,4 +11,8 @@ letters = {
     'V' :21, 'W' : 22, 'X' : 23,
     'Y' :24, 'Z' : 25
 }
-print((ord('I') - 65 ) % 26)
+# print((ord('I') - 65 ) % 26)
+
+
+import cryptography
+print(cryptography.__dict__)

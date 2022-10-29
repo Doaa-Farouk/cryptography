@@ -15,7 +15,9 @@ def affine(text, m, k ):
         
     return ''.join(word)
         
-print(affine('CYBER',21,5))  # This should result in VPALY
+# print(affine('CYBER',21,5))  # This should result in VPALY
+print(affine('doaa',21,9))  # This should result in VPALY
+print(affine('DOAA',21,9))  # This should result in URJJ
 
 
 # 2- Find the inverse : mm is the inverse for m relvent to 26
