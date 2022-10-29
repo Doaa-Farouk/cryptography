@@ -15,4 +15,18 @@ letters = {
 
 
 import cryptography
-print(cryptography.__dict__)
+# print(cryptography.__dict__)
+
+def affine(text, m, k ):
+    word = []
+    for letter in text:
+        if letter == ' ':
+            word += letter
+            continue
+        p = (ord(letter) - 65 ) % 26
+        c_num = (m * p + k)% 26
+        c = chr(c_num + 65)
+        word.append(c)
+        
+    return ''.join(word)
+
