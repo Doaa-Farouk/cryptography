@@ -1,38 +1,35 @@
-def encryption_key():
+def encryption_key(P,G,a,b):
     if __name__ == '__main__':	
-        P = 23
-        G = 9
+        # P = 23
+        # G = 9
         
-        a = 4
-        b = 3
+        # a = 4
+        # b = 3
         
         x = int(pow(G,a,P))
         y = int(pow(G,b,P))
-        
-        # print(f'y= {y}')
-        # print(f'x= {x}')
         
         # Secret key for encryption
         ka = int(pow(y,a,P))
         # print(f'ka= {ka}')
         # Secret key for decryption
-        kb = int(pow(x,b,P))
+        # kb = int(pow(x,b,P))
         return (ka)
         
         
-def decryption_key():
+def decryption_key(P,G,a,b):
     if __name__ == '__main__':
-        P = 23
-        G = 9
-        a = 4
-        b = 3
+        # P = 23
+        # G = 9
+        # a = 4
+        # b = 3
         y = int(pow(G,b,P))
         # print(f'y= {y}')
         x = int(pow(G,a,P))
         # print(f'x= {x}')
         
          # Secret key for encryption
-        ka = int(pow(y,a,P))
+        # ka = int(pow(y,a,P))
         
         # Secret key for decryption
         kb = int(pow(x,b,P))
@@ -68,11 +65,11 @@ def decrypt_affine(text, mm, k ):
     return ''.join(word)
 
 
-key= encryption_key()
+key= encryption_key(23,9,4,3)
 plain_text= input('Enter a word to encrypt:').upper()
 ciphered_text= affine(plain_text,21,key)
 print(f'ciphered_text is : {ciphered_text}')
 
-d_key= decryption_key()
+d_key= decryption_key(23,9,4,3)
 deciphered_text= decrypt_affine(ciphered_text,5,d_key)
 print(f'deciphered_text is :{deciphered_text}')
