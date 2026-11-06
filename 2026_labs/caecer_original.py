@@ -1,9 +1,9 @@
-def caesar_cipher(text, shift):
+def caesar_cipher(text, key):
     result = ""
 
     for char in text.upper():
         if char.isalpha() and char.isascii():
-            result += chr((ord(char) - ord('A') + shift) % 26 + ord('A'))
+            result += chr((ord(char) - ord('A') + key) % 26 + ord('A'))
         else:
             result += char
 
