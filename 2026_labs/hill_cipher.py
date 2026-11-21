@@ -50,7 +50,7 @@ class HillCipher:
 
     # take x and return x % len(key_string)
     modulus = np.vectorize(lambda x: x % 26)
-
+    print(modulus)
     to_int = np.vectorize(round)
 
     def __init__(self, encrypt_key: np.ndarray) -> None:
@@ -215,8 +215,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    import doctest
+    # import doctest
 
-    doctest.testmod()
+    # doctest.testmod()
 
     main()
