@@ -1,2 +1,4 @@
 pycipher
+pyciphers
 crypography
+pycryptodome
